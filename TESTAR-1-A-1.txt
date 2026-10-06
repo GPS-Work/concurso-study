@@ -1,0 +1,17 @@
+V0.2 INTEGRADA — TESTAR NA MESMA BASE
+
+0. Atualização: copiar para o mesmo repositório/endereço. Esperar pelo deploy, abrir com Internet, fechar todas as janelas e reabrir. Nunca apagar dados do Safari para forçar atualização.
+1. Preservação: verificar perfil, respostas e concursos antigos. Métricas por matéria usam perguntas ativas; quatro suspensas conservam histórico.
+2. Backup: Definições > Exportar backup. Guardar JSON em Ficheiros. Verificar kv, answers, reviews e competitions.
+3. Estudo: responder uma vez. Confirmar resultado, explicação, artigo e fonte. Fechar/reabrir: resposta permanece.
+4. Métricas: diploma, tema, subtema e dificuldade. Pergunta respondida deve aparecer como vista. Um acerto numa resposta dá 100% de acerto, sem implicar 100% de cobertura.
+5. Restauro: exportar novo backup de segurança. Importar ficheiro do passo 2, confirmando substituição. Estado regressa ao momento exportado. Importar cópia de segurança para recuperar a resposta do passo 3.
+6. Sessão: iniciar outra. Pergunta recém-respondida não deve reaparecer antes de seis horas. Banco pequeno pode reduzir a sessão. Sem histórico, usa novas; com pools suficientes, aproxima-se de 50/30/20.
+7. Concurso: criar data futura, matérias e pesos. Confirmar dias, banco e plano. Arquivar/reativar: só um ativo. Data passada mostra prova passada e plano zero.
+8. Visual: avatar, ícone, onboarding e legibilidade. Se o iPhone mantiver ícone antigo, avaliar reinstalação só depois de exportar backup; contextos de instalação podem ter armazenamento distinto.
+9. Lembrete da app: guardar hora e ativar. Com a app visível à hora escolhida, deve surgir aviso, uma vez por dia. Não acorda a app fechada.
+10. Notificação: na PWA instalada, premir Testar notificação. Conceder permissão se solicitada. Se indisponível, usar Atalhos. Não existe Web Push enviado por servidor.
+11. Atalhos: seguir guia em Definições. Configurar automação no iPhone; testar aviso com PWA fechada. Depende das opções da versão de iOS.
+12. Offline: abrir com Internet e fechar/reabrir para concluir cache. Ativar modo de voo e reabrir. Estudar, progresso e exportação devem funcionar. Fontes oficiais exigem Internet.
+
+Registar passo, resultado esperado e observado. Corrigir na mesma V0.2 integrada; repetir esse passo e os testes afetados.

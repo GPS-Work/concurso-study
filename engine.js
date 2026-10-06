@@ -1,15 +1,12 @@
-export function nextReview(current,correct,questionId){
- const now=new Date(); let streak=current?.streak||0, ease=current?.ease||2.3, interval=current?.intervalDays||0;
- if(correct){streak++;ease=Math.min(3,ease+.08);interval=streak===1?1:streak===2?3:Math.max(4,Math.round(Math.max(1,interval)*ease));}
- else{streak=0;ease=Math.max(1.4,ease-.2);interval=1;}
- const due=new Date(now);due.setDate(due.getDate()+interval);
- return {questionId,dueAt:due.toISOString(),intervalDays:interval,ease,streak,lastResult:correct?'correct':'wrong'};
+import {metrics} from './analytics.js';
+export function nextReview(current,correct,questionId,now=Date.now()){let streak=correct?(current?.streak||0)+1:0;const ease=Math.max(1.4,Math.min(3,(current?.ease||2.3)+(correct?.08:-.2)));const intervalDays=correct?(streak===1?1:streak===2?3:Math.max(4,Math.round((current?.intervalDays||1)*ease))):.25;return {questionId,streak,ease,intervalDays,lastAnsweredAt:new Date(now).toISOString(),lastResult:correct?'correct':'wrong',dueAt:new Date(now+intervalDays*86400000).toISOString()}}
+export function eligible(questions,region,lawFilter,area){return questions.filter(q=>!q.suspended&&(q.region==='Nacional'||q.region===region)&&(!lawFilter?.length||lawFilter.includes(q.law))&&(!area||q.professionalArea==='Geral'||q.professionalArea===area))}
+export function buildSession(questions,reviews,region='Madeira',limit=12,lawFilter=null,answers=[],weights={},area=null,now=Date.now()){
+ const pool=eligible(questions,region,lawFilter,area), r=new Map(reviews.map(x=>[x.questionId,x])),last=new Map();for(const a of answers)last.set(a.questionId,Math.max(last.get(a.questionId)||0,new Date(a.answeredAt).getTime()||0));for(const x of reviews)if(x.lastAnsweredAt)last.set(x.questionId,Math.max(last.get(x.questionId)||0,new Date(x.lastAnsweredAt).getTime()||0));
+ const available=pool.filter(q=>now-(last.get(q.id)||0)>=6*3600000);const topic=new Map(metrics(pool,answers,'topic',now).map(g=>[g.key,g.mastery??50]));const priority=q=>(100-(topic.get(q.topic)??50))*(Number(weights[q.law])||1);
+ const due=available.filter(q=>r.has(q.id)&&new Date(r.get(q.id).dueAt).getTime()<=now).sort((a,b)=>new Date(r.get(a.id).dueAt)-new Date(r.get(b.id).dueAt)||priority(b)-priority(a));
+ const weak=available.filter(q=>last.has(q.id)||r.has(q.id)).sort((a,b)=>priority(b)-priority(a)||(last.get(a.id)||0)-(last.get(b.id)||0));const fresh=available.filter(q=>!last.has(q.id)&&!r.has(q.id)).sort((a,b)=>(Number(weights[b.law])||1)-(Number(weights[a.law])||1));const chosen=[],ids=new Set();const take=(list,n)=>{for(const q of list){if(n<=0||chosen.length>=limit)break;if(!ids.has(q.id)){chosen.push(q);ids.add(q.id);n--}}};take(due,Math.round(limit*.5));take(weak.filter(q=>!due.some(d=>d.id===q.id)),Math.round(limit*.3));take(fresh,limit-chosen.length);take(due,limit);take(weak,limit);take(fresh,limit);return chosen;
 }
-export function buildSession(questions,reviews,region='Madeira',limit=12,lawFilter=null){
- const m=new Map(reviews.map(r=>[r.questionId,r])); const now=new Date();
- let pool=questions.filter(q=>q.region==='Nacional'||q.region===region);
- if(lawFilter?.length) pool=pool.filter(q=>lawFilter.includes(q.law));
- const due=pool.filter(q=>m.has(q.id)&&new Date(m.get(q.id).dueAt)<=now).sort((a,b)=>new Date(m.get(a.id).dueAt)-new Date(m.get(b.id).dueAt));
- const unseen=pool.filter(q=>!m.has(q.id)); return [...due,...unseen].slice(0,limit);
-}
-export function daysUntil(date){return Math.max(0,Math.ceil((new Date(date)-new Date())/86400000));}
+export function daysUntil(date,now=new Date()){if(!/^\d{4}-\d{2}-\d{2}$/.test(date||''))return null;const [y,m,d]=date.split('-').map(Number);const target=Date.UTC(y,m-1,d);if(new Date(target).toISOString().slice(0,10)!==date)return null;return Math.round((target-Date.UTC(now.getFullYear(),now.getMonth(),now.getDate()))/86400000)}
+export function competitionPlan(c,questions,answers,region,now=new Date()){const pool=eligible(questions,c.region||region,c.legislationIds),g=metrics(pool,answers,'law',now.getTime()),days=daysUntil(c.examDate,now);const unseen=g.reduce((s,x)=>s+x.total-x.seen,0);return {groups:g,days,total:pool.length,daily:days!==null&&days>=0?Math.min(40,Math.max(12,Math.ceil(unseen/Math.max(1,days)))):0};}
+

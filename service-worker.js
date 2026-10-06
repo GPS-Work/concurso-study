@@ -1,5 +1,4 @@
-const CACHE='concurso-study-v0.1';
-const ASSETS=['./','./index.html','./styles.css','./app.js','./db.js','./engine.js','./manifest.webmanifest','./data/legislation.js','./data/questions.js','./icons/icon-192.png','./icons/icon-512.png'];
-self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS))));
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));
-self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));
+const CACHE='concurso-study-v0.2-integrada-20261006-final';const ASSETS=['./','./index.html','./styles.css','./app.js','./db.js','./engine.js','./analytics.js','./backup.js','./notifications.js','./data/question-bank.js','./icons/avatar.svg','./icons/apple-touch-icon.png','./manifest.webmanifest','./data/legislation.js','./data/questions.js','./icons/icon-192.png','./icons/icon-512.png'];self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS))));self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('concurso-study-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));self.addEventListener('fetch',e=>{if(e.request.method!=='GET'||new URL(e.request.url).origin!==self.location.origin)return;e.respondWith(caches.open(CACHE).then(async c=>(await c.match(e.request))||fetch(e.request)))});
+self.addEventListener('notificationclick',e=>{e.notification.close();e.waitUntil((async()=>{const url=new URL('./',self.registration.scope).href;const windows=await self.clients.matchAll({type:'window',includeUncontrolled:true});for(const w of windows)if(w.url.startsWith(self.registration.scope)){await w.focus();return}await self.clients.openWindow(url)})())});
+
+

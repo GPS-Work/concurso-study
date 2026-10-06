@@ -1,0 +1,26 @@
+V0.2 integrada — 2026-10-06
+
+PASS AUTOMÁTICO
+Seleção 6/4/2 com pools suficientes; fallback; deduplicação; bloqueio de seis horas.
+Datas de prova e métricas sem histórico.
+Backup das quatro lojas/chaves; roundtrip JSON; validação; reversão após chave inválida; continuidade de IDs automáticos. IndexedDB simulado: fake-indexeddb 6.2.4.
+41 IDs distintos; 37 ativos com fonte/artigo/metadados; quatro antigos suspensos.
+Hora do lembrete, desativação e persistência uma vez por dia.
+Arranque e seis vistas em DOM simulado, controlos de backup/lembretes e recursos offline.
+
+PASS NO BROWSER LOCAL
+Onboarding, visual e resposta correta com explicação/fonte CRP.
+Pergunta vista, acerto e dias consecutivos atualizados.
+Concurso de teste CRP/LTFP: 31 dias até à prova, 15 perguntas disponíveis, meta diária.
+Gravação do lembrete; reabertura preserva resposta, concurso e onboarding.
+Layout 390 x 844 inspecionado.
+Servidor local parado: reabertura e início de sessão funcionam a partir do cache.
+Sem erros/avisos de consola na verificação de UI.
+
+AINDA EXIGE TESTE REAL
+GitHub Pages, dados existentes do utilizador no Safari e instalação no iPhone.
+Notificação do sistema, permissão iOS e Atalhos.
+Importação/exportação através de Ficheiros no iPhone.
+Revisão jurídica independente e correspondência com aviso de concurso concreto.
+
+O ZIP não contém os dados de teste do browser nem bases/backup de utilizador.

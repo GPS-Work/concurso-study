@@ -1,7 +1,7 @@
 const DB_NAME = 'ConcursoStudyDB';
 const DB_VERSION = 1;
 
-function openDB(){
+export function openDB(){
   return new Promise((resolve,reject)=>{
     const req=indexedDB.open(DB_NAME,DB_VERSION);
     req.onupgradeneeded=()=>{
@@ -23,3 +23,5 @@ export async function addAnswer(v){const db=await openDB();return new Promise((r
 export async function allAnswers(){const db=await openDB();return new Promise((resolve,reject)=>{const r=db.transaction('answers').objectStore('answers').getAll();r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});}
 export async function allCompetitions(){const db=await openDB();return new Promise((resolve,reject)=>{const r=db.transaction('competitions').objectStore('competitions').getAll();r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});}
 export async function putCompetition(v){const db=await openDB();return new Promise((resolve,reject)=>{const t=db.transaction('competitions','readwrite');t.objectStore('competitions').put(v);t.oncomplete=()=>resolve();t.onerror=()=>reject(t.error);});}
+
+export async function saveResponse(answer,review){const db=await openDB();return new Promise((resolve,reject)=>{const t=db.transaction(['answers','reviews'],'readwrite');t.objectStore('answers').add(answer);t.objectStore('reviews').put(review);t.oncomplete=()=>{db.close();resolve()};t.onabort=()=>{db.close();reject(t.error)};});}
