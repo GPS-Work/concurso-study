@@ -1,3 +1,6 @@
+import {normQuestions} from './norm-questions.js';
+import {rhCases} from './rh-cases.js';
+import {pathQuestions} from './path-questions.js';
 import {expandedQuestions} from './question-bank.js';
 const originalQuestions = [
  {id:'q1',law:'crp',topic:'Administração Pública',region:'Nacional',difficulty:1,prompt:'Qual é a finalidade essencial da Administração Pública?',options:['Maximizar a receita do Estado','Prosseguir o interesse público respeitando os direitos dos cidadãos','Executar apenas decisões judiciais','Substituir os órgãos políticos'],correct:1,explanation:'A Administração Pública prossegue o interesse público e deve respeitar os direitos e interesses legalmente protegidos dos cidadãos.',article:'Art. 266.º',verified:'2026-10-06'},
@@ -13,4 +16,6 @@ const legacyQuestions=originalQuestions.map(q=>({...q,subtopic:q.topic,professio
 
 const sources={"crp":["https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx","CRP — VII revisão constitucional (2005)"],"cpa":["https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2015-105602322","DL 4/2015 — consolidação consultada em 2026-10-06"],"ltfp":["https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2014-57466875","Lei 35/2014 — consolidação consultada em 2026-10-06"],"siadapram":["https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-legislativo-regional/2009-874069762","DLR 27/2009/M — redação DLR 23/2024/M"],"rgpd":["https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=pt","Regulamento (UE) 2016/679 — texto oficial"]};
 const legacyArticles={q1:'Art. 266.º, n.º 1',q5:'Art. 5.º, n.º 1, al. c)'};
-export const questions=[...legacyQuestions.map(q=>legacyArticles[q.id]?({...q,article:legacyArticles[q.id],officialSource:sources[q.law][0],legalVersion:sources[q.law][1],lastValidated:'2026-10-06',validationStatus:'source-checked',suspended:false}):({...q,suspended:true,validationStatus:'pending-source-review'})),...expandedQuestions];
+const priorQuestions=[...legacyQuestions.map(q=>legacyArticles[q.id]?({...q,article:legacyArticles[q.id],officialSource:sources[q.law][0],legalVersion:sources[q.law][1],lastValidated:'2026-10-06',validationStatus:'source-checked',suspended:false}):({...q,suspended:true,validationStatus:'pending-source-review'})),...expandedQuestions,...pathQuestions];
+
+export const questions=[...priorQuestions.map(q=>({...q,administrationScopes:q.law==='siadapram'?['regional-ram']:['central','local','regional-ram'],questionType:q.questionType||'conceito-aplicacao'})),...normQuestions,...rhCases];

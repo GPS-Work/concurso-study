@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "date": "2026-10-07",
+  "records": 7274,
+  "active": 7270,
+  "suspended": 4,
+  "literal": 7082,
+  "conceptAndCase": 188,
+  "units": 973,
+  "articles": 3292,
+  "paragraphs": 16859,
+  "profiles": {
+    "continental": 6175,
+    "local": 6501,
+    "regional": 6474,
+    "dre": 6153
+  },
+  "levels": {
+    "1": 5061,
+    "2": 2099,
+    "3": 43,
+    "4": 36,
+    "5": 31
+  },
+  "programmeCounts": "DRE — matérias do Aviso 6/2026: 6153 perguntas, 829 unidades.\nFunchal — matérias do aviso de 2024: 4142 perguntas, 550 unidades.\nRH — núcleo geral do Continente: 5032 perguntas, 674 unidades."
+}

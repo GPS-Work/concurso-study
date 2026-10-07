@@ -1,4 +1,6 @@
-V0.2 INTEGRADA — TESTAR NA MESMA BASE
+V0.2 BANCO RH — TESTAR NA MESMA BASE
+
+Depois destes testes, seguir TESTAR-PERCURSO.txt para perfis, contagens e matriz.
 
 0. Atualização: copiar para o mesmo repositório/endereço. Esperar pelo deploy, abrir com Internet, fechar todas as janelas e reabrir. Nunca apagar dados do Safari para forçar atualização.
 1. Preservação: verificar perfil, respostas e concursos antigos. Métricas por matéria usam perguntas ativas; quatro suspensas conservam histórico.

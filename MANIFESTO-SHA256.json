@@ -1,0 +1,180 @@
+{
+  "date": "2026-10-07",
+  "files": [
+    {
+      "path": "analytics.js",
+      "bytes": 1312,
+      "sha256": "4b94b97af1aaa70b84ee66c63f4bcbc52787060ad8cd5666e186450f79e4fd1c"
+    },
+    {
+      "path": "app.js",
+      "bytes": 26249,
+      "sha256": "a78e3b8ceb44666cb8cb0a330b1069ceb91d03b69e4c4a0c0996b3f633318190"
+    },
+    {
+      "path": "backup.js",
+      "bytes": 2941,
+      "sha256": "a0c388544bb08b9c11dbc45c9380fb35600828c4680ebd0d90a51fe70fa1a142"
+    },
+    {
+      "path": "cobertura.html",
+      "bytes": 738,
+      "sha256": "c75d0b3d239e6438e2002a240b58842ca116aa863291e4aa2824841a81c5e23b"
+    },
+    {
+      "path": "cobertura.js",
+      "bytes": 5474,
+      "sha256": "9fcc29ed87e530b22c606d2b3b1b0cc5ad90fd3ad6ad69c5e0265e2064a6aae9"
+    },
+    {
+      "path": "CONTAGENS.json",
+      "bytes": 622,
+      "sha256": "72f7837446a3a4b693c30610f6ad5aaf5d9fa6efb0298233469ccb15003ce401"
+    },
+    {
+      "path": "data/bank-curriculum.js",
+      "bytes": 330362,
+      "sha256": "4b3b7c56d386c5c0c773583965e0c2d54e3c1d7b3d77e7e25598f75f44c1a827"
+    },
+    {
+      "path": "data/circulares-2025.json",
+      "bytes": 3703,
+      "sha256": "9e0ca419d895d524dc169608d341d298501d4cecde2e876d6e42a5c35c688ce9"
+    },
+    {
+      "path": "data/coverage.json",
+      "bytes": 7500991,
+      "sha256": "2f55cc08b7a3e436b24a8d80cb5fdb191893e8093efe314c3781dd857f4d3c68"
+    },
+    {
+      "path": "data/curriculum.js",
+      "bytes": 7495,
+      "sha256": "4837bc2b2abcd255162b91e4840123d074eea7cbf996903c7dce419e27277361"
+    },
+    {
+      "path": "data/legislation.js",
+      "bytes": 11159,
+      "sha256": "1a3fc5b4411ae9c7147cdc5e0a951cde328d70c4c8d7a725c717b43ce8ef1488"
+    },
+    {
+      "path": "data/norm-questions.js",
+      "bytes": 15562796,
+      "sha256": "78cbb626aff25126a76cb2fbc112c41fe9e5e3a348a9ed71899726d9dcdb1531"
+    },
+    {
+      "path": "data/path-questions.js",
+      "bytes": 124227,
+      "sha256": "ddafe8b388a7e6ffb808fe6af384f18b40db63413db291620922db44cbb5c9ec"
+    },
+    {
+      "path": "data/programmes.js",
+      "bytes": 3818,
+      "sha256": "b11eb7417224434d942a41267f654651d012bb0121dcff8af28770eb5c7e092e"
+    },
+    {
+      "path": "data/question-bank.js",
+      "bytes": 33271,
+      "sha256": "573bf1eef5d735faf79864103860e843e1966de086bfa038ffc536529a9cd75a"
+    },
+    {
+      "path": "data/questions.js",
+      "bytes": 4946,
+      "sha256": "c2a9ca56b71d4cd51ba9fa65a216c5f404ea0f154c51c1bfacf871aaf16f3a8f"
+    },
+    {
+      "path": "data/rh-cases.js",
+      "bytes": 77687,
+      "sha256": "92f0868c1381920f9d8098e893afe35f83f87b617e48bf51e2d8287ce2104b55"
+    },
+    {
+      "path": "db.js",
+      "bytes": 3239,
+      "sha256": "acd778690ce0ff9c1933b30b8fad7f4810a7e75eb7c131ad332c16a9f974bf54"
+    },
+    {
+      "path": "engine.js",
+      "bytes": 4514,
+      "sha256": "2feefa3980ca3f84cabdb676ebad1844b7e74819041bdcf6cafe28824bee5cfb"
+    },
+    {
+      "path": "icons/apple-touch-icon.png",
+      "bytes": 2130,
+      "sha256": "fa26dcbfb191a1c6fde6597df84c601859c87a5751cce9d9445406d088225fcb"
+    },
+    {
+      "path": "icons/avatar.svg",
+      "bytes": 1029,
+      "sha256": "fe76f315239349a4af53614bb08bed9161de44934340771ee151221edec8021b"
+    },
+    {
+      "path": "icons/icon-192.png",
+      "bytes": 2375,
+      "sha256": "c1195ddbe4216adaa577414f4a191ea8a25931a82b7562fa0417bddf51170945"
+    },
+    {
+      "path": "icons/icon-512.png",
+      "bytes": 6493,
+      "sha256": "4cdfaaf0b52b60a4835efb4497aa025276163c5de1ecf7c0f6b8e103fe00e40b"
+    },
+    {
+      "path": "index.html",
+      "bytes": 719,
+      "sha256": "593e02e0fa6381f7d2517c74914e7744daba09a15cc485b839bcc6c2245ee0c5"
+    },
+    {
+      "path": "learning.js",
+      "bytes": 2854,
+      "sha256": "d6ab5ada9836f67bcbbedc6cdbc262a8c165071cff0757ab20ee4b306cf041f2"
+    },
+    {
+      "path": "LEVANTAMENTO.md",
+      "bytes": 6972,
+      "sha256": "c701ecb25ed5341ee9c21b6af380084c0c3efe5b540c6389a4e37a2c158940eb"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 503,
+      "sha256": "6876883fc1542cd2d3fb892b035f3c56bdd93836b72a8de22b1bbfee687fb7a7"
+    },
+    {
+      "path": "notifications.js",
+      "bytes": 2114,
+      "sha256": "a083c4596b38b5bcb38fe8edcbf17b5778b3d9f9e7eae27d403dc44c3beb2224"
+    },
+    {
+      "path": "preview-banco-rh.png",
+      "bytes": 41291,
+      "sha256": "22db76a832e90be1ca0bc09df707b46cd9a389bd8310aede34bd11baac9cdf7d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5733,
+      "sha256": "71cb2d3e417ff09f9b14a8408cd2c8abae50c24b0501d4d22ae3af25a7088bf3"
+    },
+    {
+      "path": "service-worker.js",
+      "bytes": 1527,
+      "sha256": "0e6bae3631d7a18445a6cbb4e1bb54034002dddea1409b4367daa626bd76155f"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 8823,
+      "sha256": "5df00053c49440364e719445afa5597ef7f7cfe9cf4cc005df121618db639dd6"
+    },
+    {
+      "path": "TESTAR-1-A-1.txt",
+      "bytes": 2441,
+      "sha256": "19d6de73fff39701be39a591b4f9b1c2bd78dc98025bb0749e27d83e4fbefc0b"
+    },
+    {
+      "path": "TESTAR-PERCURSO.txt",
+      "bytes": 1919,
+      "sha256": "84bf62a99b299f8f3ac0c1bb64a9fbdf36f294effb54ffebed768f991b2708b6"
+    },
+    {
+      "path": "VERIFICACAO.txt",
+      "bytes": 2685,
+      "sha256": "416eb8c332b162f127677318e5b8ad2eb895ff1e2a1b4cef3e6b1517fef57ff6"
+    }
+  ]
+}
