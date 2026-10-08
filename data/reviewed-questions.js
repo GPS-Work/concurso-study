@@ -1,0 +1,15 @@
+import {items as part1} from './reviewed-part-01.js';
+import {items as part2} from './reviewed-part-02.js';
+import {items as part3} from './reviewed-part-03.js';
+import {items as part4} from './reviewed-part-04.js';
+import {items as part5} from './reviewed-part-05.js';
+import {items as part6} from './reviewed-part-06.js';
+import {items as part7} from './reviewed-part-07.js';
+import {items as part8} from './reviewed-part-08.js';
+import {items as part9} from './reviewed-part-09.js';
+import {items as part10} from './reviewed-part-10.js';
+import {items as part11} from './reviewed-part-11.js';
+import {items as part12} from './reviewed-part-12.js';
+import {items as part13} from './reviewed-part-13.js';
+import {items as part14} from './reviewed-part-14.js';
+export const reviewedQuestions=[...part1,...part2,...part3,...part4,...part5,...part6,...part7,...part8,...part9,...part10,...part11,...part12,...part13,...part14];
