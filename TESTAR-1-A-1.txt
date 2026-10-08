@@ -1,19 +1,97 @@
-V0.2 BANCO RH — TESTAR NA MESMA BASE
+V0.2 INTEGRADA — TESTES NO IPHONE
+Referência legal 7/10/2026; conferência 8/10/2026.
 
-Depois destes testes, seguir TESTAR-PERCURSO.txt para perfis, contagens e matriz.
+PASSO 1 — GUARDAR OS DADOS
+Ação: Na versão instalada, abrir Definições > Exportar backup. Guardar o JSON em Ficheiros antes de atualizar.
+Esperado: O ficheiro existe e contém kv, answers, reviews e competitions. Inclui perfil, histórico, artigos, escrita e concursos. Atualizar não exige importar.
 
-0. Atualização: copiar para o mesmo repositório/endereço. Esperar pelo deploy, abrir com Internet, fechar todas as janelas e reabrir. Nunca apagar dados do Safari para forçar atualização.
-1. Preservação: verificar perfil, respostas e concursos antigos. Métricas por matéria usam perguntas ativas; quatro suspensas conservam histórico.
-2. Backup: Definições > Exportar backup. Guardar JSON em Ficheiros. Verificar kv, answers, reviews e competitions.
-3. Estudo: responder uma vez. Confirmar resultado, explicação, artigo e fonte. Fechar/reabrir: resposta permanece.
-4. Métricas: diploma, tema, subtema e dificuldade. Pergunta respondida deve aparecer como vista. Um acerto numa resposta dá 100% de acerto, sem implicar 100% de cobertura.
-5. Restauro: exportar novo backup de segurança. Importar ficheiro do passo 2, confirmando substituição. Estado regressa ao momento exportado. Importar cópia de segurança para recuperar a resposta do passo 3.
-6. Sessão: iniciar outra. Pergunta recém-respondida não deve reaparecer antes de seis horas. Banco pequeno pode reduzir a sessão. Sem histórico, usa novas; com pools suficientes, aproxima-se de 50/30/20.
-7. Concurso: criar data futura, matérias e pesos. Confirmar dias, banco e plano. Arquivar/reativar: só um ativo. Data passada mostra prova passada e plano zero.
-8. Visual: avatar, ícone, onboarding e legibilidade. Se o iPhone mantiver ícone antigo, avaliar reinstalação só depois de exportar backup; contextos de instalação podem ter armazenamento distinto.
-9. Lembrete da app: guardar hora e ativar. Com a app visível à hora escolhida, deve surgir aviso, uma vez por dia. Não acorda a app fechada.
-10. Notificação: na PWA instalada, premir Testar notificação. Conceder permissão se solicitada. Se indisponível, usar Atalhos. Não existe Web Push enviado por servidor.
-11. Atalhos: seguir guia em Definições. Configurar automação no iPhone; testar aviso com PWA fechada. Depende das opções da versão de iOS.
-12. Offline: abrir com Internet e fechar/reabrir para concluir cache. Ativar modo de voo e reabrir. Estudar, progresso e exportação devem funcionar. Fontes oficiais exigem Internet.
+PASSO 2 — ATUALIZAR O MESMO REPOSITÓRIO
+Ação: Seguir ATUALIZAR-GITHUB.txt: carregar conteúdo do ZIP na raiz atual, substituir iguais, acrescentar novos e remover os seis módulos retirados. Aguardar publicação; abrir online, fechar todas as janelas e reabrir.
+Esperado: Mesmo endereço, dados conservados e cache concurso-study-v0.2-rh-ap-20261008-r23. Não limpar armazenamento Safari. A publicação efetiva tem de terminar no GitHub. O banco vem dividido; carregar todas as partes. A primeira abertura online precisa de descarregar o conteúdo de estudo para o cache.
 
-Registar passo, resultado esperado e observado. Corrigir na mesma V0.2 integrada; repetir esse passo e os testes afetados.
+PASSO 3 — CONFERIR PERFIL E CONTAGENS
+Ação: Definições: Madeira, Administração regional da Madeira, Recursos Humanos, Treino geral atual. Guardar e abrir Hoje/Percurso.
+Esperado: Perfil regional geral: 7148 perguntas e 587 lições. Banco global: 8251 perguntas, zero lacunas. Contagens de perfis sobrepõem-se; não somar. O histórico pode já concluir parte do percurso.
+
+PASSO 4 — CONFERIR O PERCURSO
+Ação: Abrir Percurso, localizar capítulo e lição atual; observar nós concluídos, disponíveis e bloqueados.
+Esperado: Mapa vertical com nós alternados e estados reais. O capítulo começa em fundamentos e sobe nos níveis presentes. A matéria seguinte volta aos seus fundamentos. As unidades antigas permanecem compatíveis com o histórico.
+
+PASSO 5 — LER ANTES DE RESPONDER
+Ação: Hoje > Começar, ou botão de lição diária no percurso. Ler o excerto e premir Li o texto · responder.
+Esperado: Normalmente duas perguntas sobre leitura e oito de revisão/aplicação. O artigo, versão e fonte acompanham o excerto. Não existem frases para completar. Pode haver menos perguntas se o perfil, nível ou intervalo não disponibilizar dez.
+
+PASSO 6 — CONFERIR AS RESPOSTAS DA LEITURA
+Ação: Responder às duas primeiras perguntas; usar Consultar o texto se necessário.
+Esperado: Quatro opções e uma correta. Após responder: explicação, fundamento, versão e data. Respostas assistidas são guardadas e entram no acerto/cobertura, mas não aumentam o domínio sem consulta.
+
+PASSO 7 — CONFERIR REVISÃO E CASOS DE RH
+Ação: Responder às oito perguntas seguintes.
+Esperado: Perguntas de teoria, interpretação ou casos práticos dentro das matérias e níveis elegíveis. Seleção aproxima 50% revisões devidas, 30% pontos fracos, 20% novas, preenchendo vagas disponíveis. Com histórico vazio, predominam perguntas novas básicas.
+
+PASSO 8 — TERMINAR E AVANÇAR
+Ação: Concluir a sessão, premir Continuar e voltar ao percurso.
+Esperado: Respostas guardadas, progresso atualizado. Lição passa quando todas as famílias foram praticadas e pelo menos 80% têm última resposta correta sem consulta. As duas assistidas não provam domínio sozinhas. A lição diária pode precisar de sessões adicionais para cumprir a meta.
+
+PASSO 9 — EVITAR REPETIÇÃO IMEDIATA
+Ação: Abrir uma lição acabada imediatamente e observar disponibilidade.
+Esperado: A pergunta e variantes da mesma família não regressam antes de seis horas. Se não há perguntas disponíveis, aparece indicação de aguardar. A lição seguinte pode ser iniciada se estiver desbloqueada e tiver perguntas disponíveis.
+
+PASSO 10 — MEMORIZAR ARTIGOS
+Ação: Depois de responder, abrir Hoje > Treinar artigos e introduzir o número; verificar/revelar.
+Esperado: Recordação sem opções. Acerto adia revisão; erro regressa após seis horas. Só existem artigos elegíveis de perguntas já respondidas; pontos/anexos que não são artigos não se tornam números de artigos inventados.
+
+PASSO 11 — VER MÉTRICAS REAIS
+Ação: Progresso: conferir diploma, tema, subtema e dificuldade das respostas dadas.
+Esperado: Vistas, respostas, acerto e domínio ponderado por recência. Acerto de 100% em uma pergunta não é cobertura de 100% do diploma. Assistidas são identificadas; perguntas retiradas deixam de contar nas métricas atuais e continuam no histórico bruto.
+
+PASSO 12 — VERIFICAR ÂMBITOS E PROGRAMAS
+Ação: Trocar temporariamente perfis e programas; comparar com CONTAGENS.json. No fim regressar ao perfil usado.
+Esperado: Contagens esperadas:
+Madeira regional — geral: 7148 perguntas elegíveis; 587 lições.
+Continente central — geral: 6297 perguntas elegíveis; 512 lições.
+Madeira autárquico — geral: 6072 perguntas elegíveis; 511 lições.
+DRE — matérias do Aviso 6/2026: 6776 perguntas elegíveis; 563 lições.
+Funchal — matérias do aviso de 2024: 4628 perguntas elegíveis; 398 lições.
+RH — núcleo geral do Continente: 5329 perguntas elegíveis; 431 lições.
+Madeira autárquica não recebe automaticamente férias/avaliação regionais. Os programas usam legislação atual e avisam que o júri pode exigir outra data. Mudar perfil conserva respostas.
+
+PASSO 13 — CONFERIR COBERTURA E CONDIÇÕES
+Ação: Leis > matriz. Escolher diploma, abrir entrada e conceitos. Consultar disposição revogada e nota de aplicação.
+Esperado: 89 conjuntos, 5 042 entradas, 4 850 com conceitos/perguntas revistos; 191 revogadas com transição e uma exclusão fundamentada. Zero entradas pendentes no inventário. Condições não demonstradas e divergências oficiais permanecem explícitas; a matriz não certifica toda legislação ou carreira especializada.
+
+PASSO 14 — CRIAR CONCURSO DE TESTE
+Ação: Concursos: criar teste com data futura, matérias, pesos e programa. Ativar e iniciar lição diária.
+Esperado: Dias até prova, banco e progresso específicos, meta diária. Um concurso ativo. A meta pode exceder dez: completar nas lições desbloqueadas. Prova passada dá meta zero. Tempo/consulta do simulado respeitam configuração; conferir sempre aviso e ata do júri.
+
+PASSO 15 — PRATICAR ESCRITA
+Ação: Com concurso ativo, terminar a lição diária. Escrever resposta com pelo menos 80 caracteres; Guardar e ver critérios. Fechar/reabrir.
+Esperado: Texto conservado com concurso, artigo, solução orientadora e critérios problema/regra/aplicação/conclusão. Sem nota automática. Sem concurso ativo, a escrita final não aparece. Desativar o concurso de teste no fim.
+
+PASSO 16 — TESTAR SIMULADO E RECUPERAÇÃO
+Ação: Num concurso configurado, iniciar simulado; responder e guardar rascunho. Sair/reabrir e recuperar. Concluir quando pronto.
+Esperado: Tempo, formato e consulta conforme configuração. Respostas/rascunho conservados localmente; resultado distingue o treino e não altera a nota oficial de concurso. Provas públicas históricas servem como referência de estrutura e não de legislação atual.
+
+PASSO 17 — TESTAR RESTAURO COM CÓPIAS
+Ação: Exportar A; responder nova pergunta; exportar B. Importar A e confirmar substituição. No fim importar B.
+Esperado: Antes de substituir, descarrega cópia de segurança atual. A repõe estado anterior; B repõe resposta nova. JSON inválido é rejeitado; falha de importação não deixa restauro parcial. Guardar sempre cópia íntegra fora da app.
+
+PASSO 18 — TESTAR OFFLINE NO IPHONE
+Ação: Após abertura online da versão nova, fechar/reabrir; ativar modo de voo. Abrir Hoje/Percurso/Progresso/matriz, responder e exportar.
+Esperado: Leitura, estudo, gravação, métricas, escrita, artigos e backup funcionam offline. Fontes externas e ofertas novas precisam de rede. Este teste físico ainda não foi realizado pelo agente. Reativar rede no fim.
+
+PASSO 19 — CONFERIR OFERTAS BEP-RAM
+Ação: Com rede, abrir painel de ofertas e ATUALIZAR-BEP-RAM.html. Configurar processo GitHub conforme instruções. Executar manualmente e conferir o registo.
+Esperado: Ofertas com prazo, acesso público e indicação RH ou área por confirmar. Falha de consulta não aparece como zero ofertas. Agenda configurada de três em três horas depende de execução e publicação reais; o GitHub pode atrasar tarefas.
+
+PASSO 20 — CONFERIR ALERTAS DE OFERTAS
+Ação: Ativar alertas na aplicação; observar primeira carga. Depois comparar com uma oferta realmente nova na atualização.
+Esperado: Primeira carga estabelece base; novas ofertas confirmadas podem gerar aviso uma vez na aplicação aberta. Não inventar oferta para testar nem confundir preferência com autorização do iPhone. Alertas com app fechada dependem do procedimento de Atalhos; não há servidor push.
+
+PASSO 21 — CONFERIR VISUAL E LEMBRETE
+Ação: Ver avatar, ícone, apresentação e legibilidade. Guardar hora do lembrete e testar com app aberta; testar Atalhos separadamente.
+Esperado: Elementos visuais presentes e lembrete interno uma vez por dia à hora configurada. Ícone iOS pode manter cache; alteração da instalação só depois de backup. Notificação nativa/Atalhos dependem do dispositivo.
+
+PASSO 22 — FECHAR VERIFICAÇÃO
+Ação: Exportar novo backup depois dos testes. Registar passo, perfil/programa, resultado esperado e observado.
+Esperado: Dados conservados e pontos do roteiro confirmados no dispositivo. VERIFICACAO.txt documenta provas locais e limitações, sem apresentar Safari, publicação ou certificação jurídica independente como testes executados.

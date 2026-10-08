@@ -1,29 +1,100 @@
-V0.2 BANCO RH — 7/10/2026
+VERIFICAÇÃO LOCAL — V0.2 INTEGRADA
+Conferência: 8/10/2026. Referência legal: 2026-10-07.
+Cache: concurso-study-v0.2-rh-ap-20261008-r23
 
-PASS AUTOMÁTICO
-7 274 IDs únicos; 7 270 ativos; quatro suspensos. Esquema, opções distintas, índices corretos e fontes HTTPS.
-7 082 exercícios literais: resposta corresponde ao excerto e posição; hash SHA-256 confere; sem caracteres de substituição ou rodapés detetados.
-973 unidades; cada pergunta ativa pertence a uma unidade; IDs únicos; 28 unidades/162 membros antigos preservados.
-Filtros nacional/autárquico/regional; orçamento 2025 reservado ao programa DRE; referência SRE revogada excluída.
-Seleção 6/4/2 com pools suficientes; fallback, deduplicação, intervalo de seis horas e distribuição por diplomas.
-Métricas, datas, marco todas vistas + 80%, desbloqueio e XP na primeira correta.
-Backup integral nas quatro lojas/chaves, roundtrip, validação e reversão transacional, IDs automáticos preservados. IndexedDB simulado com fake-indexeddb.
-Lembretes por hora/desativação/uma vez por dia; arranque e seis ecrãs em DOM simulado; inventário de recursos do cache.
+RESULTADO
+60 testes automáticos locais passaram para os mesmos ficheiros. Snapshot SHA-256: 01628ddb4b8582921146676397aabcff1f0b663b3dc984688440317e6bc0902b
+8251 perguntas ativas, 5 IDs suspensos, zero exercícios de completar frases. 6749 novas e 1502 anteriores com conferência documental. 629 lições em 10 capítulos.
 
-PASS NO NAVEGADOR LOCAL DESTE BANCO
-Perfil limpo: Madeira/Regional/Treino geral 6 474 perguntas; sem dados nas métricas e 0 XP.
-Programa RH Continente: 5 032 perguntas, sem módulos RAM; resposta CT correta com explicação, artigo 202.º, fonte e +16 XP.
-Percurso: 75 unidades CRP, paginação 1/4 para 2/4; unidades e limites de desbloqueio visíveis.
-Matriz: LTFP 424 artigos/367 com exercício/1 074 perguntas; filtro de lacunas funciona.
-Programa Funchal: 4 142 perguntas e SIADAP autárquico.
-Servidor desligado: recarregar aplicação preservou perfil e resposta, iniciou sessão de 12 perguntas e abriu a matriz do cache.
+COBERTURA DOCUMENTAL
+Bibliografia dos dois avisos atualizada e 89 conjuntos documentais de RH geral inventariados. Cobertura documental de conceitos e condições; não certificação independente, prova de acontecimentos regulamentares não identificados ou inventário de toda carreira especial possível.
+89 conjuntos e 5 042 entradas: 4 850 com inventário conceptual e correspondências conferidas, 191 revogadas com análise transitória e uma exclusão fundamentada. Zero perguntas ativas por rever e zero conceitos declarados completos sem correspondência válida. Texto de referência, hash, âmbito, fonte, remissões, versão e condições permanecem na matriz. Correspondência pode estar na pergunta, solução ou explicação; uma pergunta não prova sozinha domínio de todo artigo.
+
+VERIFICAÇÕES FUNCIONAIS LOCAIS
+- Exportação/importação das quatro lojas IndexedDB; chaves desconhecidas, rollback atómico e IDs após restauro.
+- Métricas por diploma/tema/subtema/dificuldade e histórico; acerto, cobertura e domínio sem consulta separados.
+- Sessão adaptativa: quotas aproximadas 50/30/20, deduplicação de famílias, seis horas de intervalo, fallback e âmbito/região/programa.
+- Percurso progressivo e marcos históricos. A leitura assistida não gera XP nem permite subir dificuldade; prática sem consulta mantém o domínio. Lições pequenas recebem fundamentos do mesmo capítulo.
+- Fluxos completos 2+8 com e sem concurso; escrita guardada apenas no concurso ativo; memória de artigos, anexos/secções sem falsa numeração de artigo.
+- Simulado com parâmetros, tempo, rascunho e recuperação; plano, dias até prova e progresso específico.
+- Ressalvas legais no texto e explicações; transições, tabelas/anexos e matriz interativa.
+- BEP-RAM: classificação conservadora, prazos, falhas sem falso zero, cache/backup e avisos novos sem repetição.
+- Service worker: atualização, cache local, navegação offline simulada; todos os recursos disponíveis em subpasta equivalente a GitHub Pages. Manifest e URLs relativos. Sintaxe de todos os módulos JavaScript.
+- Amostra de desempenho com 5 000 respostas no computador local; resultado não representa medição no iPhone.
+
+TESTES EXECUTADOS
+- PASS test.mjs
+- PASS ap-bank-test.mjs
+- PASS extended-test.mjs
+- PASS learning-test.mjs
+- PASS legal-date-test.mjs
+- PASS guided-reading-test.mjs
+- PASS guided-ui-test.mjs
+- PASS guided-ui-test.mjs --active-competition
+- PASS reading-excerpts-test.mjs
+- PASS reading-excerpts-ui-test.mjs
+- PASS legal-context-ui-test.mjs
+- PASS legal-context-ui-test.mjs --rpsc
+- PASS legal-context-ui-test.mjs --cga
+- PASS bep-test.mjs
+- PASS bep-ui-test.mjs
+- PASS service-worker-test.mjs
+- PASS coverage-review-test.mjs
+- PASS governance-bank-test.mjs
+- PASS travel-dirigente-bank-test.mjs
+- PASS travel-complete-bank-test.mjs
+- PASS dirigente-complete-bank-test.mjs
+- PASS dirigente-adaptations-bank-test.mjs
+- PASS faap-bank-test.mjs
+- PASS dici-complete-bank-test.mjs
+- PASS cga-bank-test.mjs
+- PASS exam-mode-test.mjs
+- PASS exam-ui-test.mjs
+- PASS exam-research-test.mjs
+- PASS small-legal-bank-test.mjs
+- PASS cga-complete-bank-test.mjs
+- PASS adse-complete-bank-test.mjs
+- PASS sickness-complete-bank-test.mjs
+- PASS parental-rgss-complete-bank-test.mjs
+- PASS menac-complete-bank-test.mjs
+- PASS legacy-review-test.mjs
+- PASS balance-bank-test.mjs
+- PASS modern-bank-test.mjs
+- PASS sst-complete-bank-test.mjs
+- PASS rjal-complete-bank-test.mjs
+- PASS crp-complete-bank-test.mjs
+- PASS ct-reviewed-bank-test.mjs
+- PASS ctram-reviewed-bank-test.mjs
+- PASS ct-complement-bank-test.mjs
+- PASS cga-special-bank-test.mjs
+- PASS ccp-current-bank-test.mjs
+- PASS rgpd-core-bank-test.mjs
+- PASS rgpd-epd-transfer-bank-test.mjs
+- PASS rgpd-control-bank-test.mjs
+- PASS rgpd-final-bank-test.mjs
+- PASS formation-complete-bank-test.mjs
+- PASS national-data-complete-bank-test.mjs
+- PASS access-complete-bank-test.mjs
+- PASS financial-complete-bank-test.mjs
+- PASS recruitment-complete-bank-test.mjs
+- PASS accident-complete-bank-test.mjs
+- PASS social-parental-complete-bank-test.mjs
+- PASS ltfp-approval-complete-bank-test.mjs
+- PASS degrees-complete-bank-test.mjs
+- PASS final-integrated-bank-test.mjs
+- PASS package-check.mjs
 
 LIMITES
-Os testes literais verificam a extração e estrutura, não revisão jurídica independente de 7 270 perguntas nem cobertura semântica integral.
-Circulares 2025: análise e casos pendentes; orgânica SRE do aviso requer esclarecimento; redação histórica do aviso não certificada.
-GitHub Pages real, Safari/iPhone, dados do utilizador, exportação/importação em Ficheiros, permissões de notificação e Atalhos exigem testes no dispositivo.
-Dados do navegador de teste e listas nominativas não integram o ZIP.
+- Testes de interface simulam DOM/IndexedDB; não comprovam Safari/iPhone.
+- Publicação e execução no GitHub não verificadas.
+- Conferência documental do agente; não certificação jurídica independente.
+- Concretização da portaria do quadro interdepartamental e suplemento de mobilidade não demonstrada; regras condicionais explícitas.
+- Portaria específica de funcionalidades/segurança da ferramenta SIADAP não demonstrada; plataforma real e facultatividade regional/local confirmadas.
+- Publicação de adaptação RAM do regime geral de formação não demonstrada; revogação regional não presumida.
+- Designação operacional de todos os representantes ERTE e destinatário especializado regional de quotas não demonstrados; sucessões e exigência de apuramento por matéria cobertas.
+- Modelos oficiais contêm divergências documentadas (nomeadamente média 6,5 e referência X.3.1-K); não há solução universal inventada.
+- Regime de cada carreira especial e lei da data efetivamente exigida pelo júri precisam de confronto no concurso concreto.
+Não foram executados deploy real, workflow periódico no repositório, Safari/iPhone físico, modo de voo no dispositivo ou Atalhos/notificações nativos. O guia pago foi analisado para organização de temas; PDF e perguntas pagas não são redistribuídos.
 
-Concurso DRE testado no navegador: LTFP + Portaria RAM, 30 dias, 1 159 perguntas, meta 39/dia; arquivo confirmado.
-Layout 390 x 844 inspecionado, sem largura horizontal excedente; preview-banco-rh.png mostra apenas estado sintético local.
-Recursos do cache/manifesto verificados sob subpasta equivalente ao GitHub Pages; todos os scripts passaram a análise sintática. Amostra local de percurso com 5 000 respostas: 290 ms neste computador, sem garantia de desempenho equivalente no iPhone.
+EMPACOTAMENTO
+O empacotamento só aceita cobertura concluída, regressão sem falhas e ficheiros correspondentes ao snapshot. MANIFESTO-SHA256.json enumera os ficheiros entregues; o processo confere cada hash e a integridade do ZIP. Dados sintéticos de teste e pré-visualizações não são entregues. Executar TESTAR-1-A-1.txt no dispositivo.

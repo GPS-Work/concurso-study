@@ -1,0 +1,18 @@
+ATUALIZAÇÃO ÚNICA — V0.2 INTEGRADA
+
+Pacote integrado: cobertura documental do inventário e regressão local verificadas.
+
+1. Exportar e guardar backup JSON antes de atualizar.
+2. Extrair o ZIP. Carregar todo o conteúdo de concurso-study-v0.2 para a mesma raiz usada pelo GitHub Pages, incluindo ficheiros novos, data, icons, scripts e .github. Substituir iguais. Não carregar a pasta exterior como subpasta.
+3. Remover os ficheiros antigos retirados:
+data/norm-questions.js
+data/bank-curriculum.js
+data/rh-cases.js
+data/exam-questions.js
+data/path-questions.js
+data/question-bank.js
+4. Fazer commit, aguardar publicação Pages, abrir online e fechar/reabrir todas as janelas da app para atualizar o cache. Não limpar os dados Safari nem remover a instalação para forçar atualização.
+5. Confirmar perfil, programa e histórico. Comparar contagens com CONTAGENS.json: atualmente 7148 perguntas e 587 lições no perfil geral Madeira/regional/RH. Realizar TESTAR-1-A-1.txt.
+6. Para atualização de ofertas BEP-RAM, seguir ATUALIZAR-BEP-RAM.html. A recolha programada precisa de execução real e permissões no repositório.
+
+Os dados antigos continuam no IndexedDB e no backup. As métricas atuais excluem exercícios retirados e podem mudar sem perda de histórico.

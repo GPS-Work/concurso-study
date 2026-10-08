@@ -1,11 +1,12 @@
-TESTAR O BANCO E PERCURSO — V0.2, 7/10/2026
+PERCURSO — V0.2 INTEGRADA
 
-1. Atualizar conforme README. Definições: Madeira, Regional, RH, Treino geral. Esperado: 6 474 perguntas. Histórico anterior permanece; a expansão pode reduzir a percentagem de cobertura por aumentar o denominador.
-2. Percurso: escolher CRP. Esperado: 75 unidades, página 1/4; as unidades originais preservam os marcos. Seguinte mostra página 2/4; voltar não apaga dados.
-3. Distinguir as linhas Percurso original, Leitura de normas e Casos de RH. Cada linha avança no mesmo diploma independentemente das outras. Não existem centenas de casos de nível 5: a maioria do banco é leitura de níveis 1–2.
-4. Iniciar unidade disponível. Responder a todas e atingir a meta mostrada. Esperado: marco concluído e unidade seguinte dessa linha desbloqueada. Sete perguntas exigem seis corretas; deixar uma por responder impede a conclusão.
-5. Primeira correta: +12/14/16/18/20 XP conforme dificuldade. Repetir uma pergunta já acertada não duplica XP. Esperado: erro não dá XP; revisão recente respeita seis horas.
-6. Trocar perfil para RH — núcleo geral do Continente e guardar. Esperado: 5 032 perguntas; ausência de SIADAP-RAM/LTFP-RAM/CCP-RAM e Portaria regional. XP visível pode mudar porque o universo mudou, sem apagar respostas.
-7. Trocar para Funchal 2024. Esperado: 4 142 perguntas, âmbito autárquico e SIADAP autárquico atual. Não é reconstrução da prova de 2024. Trocar para DRE 2026: 6 153 perguntas e matérias de orçamento 2025 identificadas como tal.
-8. Leis > Matriz. LTFP: 424 entradas de artigos, 367 com exercício, 1 074 perguntas. Marcar apenas artigos sem exercícios: aparecem lacunas e artigos revogados. Expandir um artigo mostra segmentos, versão e fonte.
-9. Abrir online, aguardar e reabrir; ativar modo de voo. Esperado: banco, percurso e matriz continuam acessíveis. Links externos das fontes não abrem sem Internet.
+Executar TESTAR-1-A-1.txt, passos 3 a 10 e 14 a 16 para percurso, leitura, artigo, escrita e concurso.
+
+Madeira regional — geral: 7148 perguntas elegíveis; 587 lições.
+Continente central — geral: 6297 perguntas elegíveis; 512 lições.
+Madeira autárquico — geral: 6072 perguntas elegíveis; 511 lições.
+DRE — matérias do Aviso 6/2026: 6776 perguntas elegíveis; 563 lições.
+Funchal — matérias do aviso de 2024: 4628 perguntas elegíveis; 398 lições.
+RH — núcleo geral do Continente: 5329 perguntas elegíveis; 431 lições.
+
+Total global 8251 perguntas e 629 lições, filtrados por âmbito/programa. Famílias: 7108. Dificuldades 1–5; uma variante por família/sessão; intervalo seis horas. A lição diária usa 2+8, com escrita apenas quando concurso ativo. O número de perguntas não equivale ao número de conceitos jurídicos independentes.

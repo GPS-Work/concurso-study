@@ -1,15 +1,38 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
+  "referenceDate": "2026-10-07",
+  "applicationSha256": "01628ddb4b8582921146676397aabcff1f0b663b3dc984688440317e6bc0902b",
+  "regressionSuites": 60,
   "files": [
     {
+      "path": ".github/workflows/bep-ram.yml",
+      "bytes": 1535,
+      "sha256": "a8db09e06f1c19217025fe8011502e176cc4045c26ed68be17f4048b1b210b60"
+    },
+    {
       "path": "analytics.js",
-      "bytes": 1312,
-      "sha256": "4b94b97af1aaa70b84ee66c63f4bcbc52787060ad8cd5666e186450f79e4fd1c"
+      "bytes": 1383,
+      "sha256": "72f43c88e21d1abdabf00fb4813ebeca5b8259fd270b8cfe6404610836795da1"
     },
     {
       "path": "app.js",
-      "bytes": 26249,
-      "sha256": "a78e3b8ceb44666cb8cb0a330b1069ceb91d03b69e4c4a0c0996b3f633318190"
+      "bytes": 48761,
+      "sha256": "bedbaf315e48dd0fb7d03f754a0f59dcd30896587e468a0a6825db3c72127f6b"
+    },
+    {
+      "path": "article-memory.js",
+      "bytes": 1941,
+      "sha256": "23ca06108fb8bef3f9d6dc8d8ab5a3065d0411b030be800be2bb2a5d112fdd88"
+    },
+    {
+      "path": "ATUALIZAR-BEP-RAM.html",
+      "bytes": 3967,
+      "sha256": "7121f151d4287ca4fdac6ac0b6bcc33e3d9b063ecd647a75ed50084e61a57cb9"
+    },
+    {
+      "path": "ATUALIZAR-GITHUB.txt",
+      "bytes": 1281,
+      "sha256": "197b8daa5515752ed7b4c9a8112a5195eb87a2b1f8f22dd87b86184f288803e6"
     },
     {
       "path": "backup.js",
@@ -18,23 +41,28 @@
     },
     {
       "path": "cobertura.html",
-      "bytes": 738,
-      "sha256": "c75d0b3d239e6438e2002a240b58842ca116aa863291e4aa2824841a81c5e23b"
+      "bytes": 772,
+      "sha256": "a33ee99884aff6841df9b21fbdd947f5fa52e56fcd66e0e7cc2db46c42fb9f2d"
     },
     {
       "path": "cobertura.js",
-      "bytes": 5474,
-      "sha256": "9fcc29ed87e530b22c606d2b3b1b0cc5ad90fd3ad6ad69c5e0265e2064a6aae9"
+      "bytes": 6689,
+      "sha256": "3f9eb3baa7c7f6e8951533f97a8f389ba05a92bc49d2093ea6ee1489e795e92d"
     },
     {
       "path": "CONTAGENS.json",
-      "bytes": 622,
-      "sha256": "72f7837446a3a4b693c30610f6ad5aaf5d9fa6efb0298233469ccb15003ce401"
+      "bytes": 27085,
+      "sha256": "78547890ed97302789636bdd86bf8bb208583812d28284eb453efdc212752811"
     },
     {
-      "path": "data/bank-curriculum.js",
-      "bytes": 330362,
-      "sha256": "4b3b7c56d386c5c0c773583965e0c2d54e3c1d7b3d77e7e25598f75f44c1a827"
+      "path": "data/ap-questions.js",
+      "bytes": 4381912,
+      "sha256": "54717e32c98526a7039f8b04b19feaa308944306569cba4f666d1e88b5769c80"
+    },
+    {
+      "path": "data/bep-offers.json",
+      "bytes": 1759,
+      "sha256": "14d7665fe80e371275dd5483951a38976b0b4ca973f143f50b37a0a9a9c2d8a7"
     },
     {
       "path": "data/circulares-2025.json",
@@ -43,58 +71,163 @@
     },
     {
       "path": "data/coverage.json",
-      "bytes": 7500991,
-      "sha256": "2f55cc08b7a3e436b24a8d80cb5fdb191893e8093efe314c3781dd857f4d3c68"
+      "bytes": 21389782,
+      "sha256": "3d5b7cb3f5c5fd3b91faa16949848dea04b6b4a5be95727effdd9f0c46c07f0e"
     },
     {
       "path": "data/curriculum.js",
-      "bytes": 7495,
-      "sha256": "4837bc2b2abcd255162b91e4840123d074eea7cbf996903c7dce419e27277361"
+      "bytes": 175,
+      "sha256": "e4312ba3e2bf5de8c18e7c8368a15853273c9e6bb46d8bdd23945d13920ecfd5"
+    },
+    {
+      "path": "data/exam-curriculum.js",
+      "bytes": 500510,
+      "sha256": "652a8c8afb663da235826ea376460839175c0a5509c8abcc0e11154ec76118d9"
+    },
+    {
+      "path": "data/exam-references.js",
+      "bytes": 2480,
+      "sha256": "a43394791f298e035814dcba351f02632ea7e1f4a6bd1353ebcdff126491398b"
+    },
+    {
+      "path": "data/legacy-curriculum.js",
+      "bytes": 6422,
+      "sha256": "42243f084b2d1fc3171f3b00563a6b60d50f96febf268d0032b63c7e15ce2a20"
+    },
+    {
+      "path": "data/legacy-questions.js",
+      "bytes": 668944,
+      "sha256": "4b84ed71fcf3345c6d54d021d770ce6b254ad7b77c96068cfb4b03d7ac266df3"
+    },
+    {
+      "path": "data/legal-context.js",
+      "bytes": 4160547,
+      "sha256": "db6ccb240578400c4ac4ee7c6d082541c5ac2600dd5a0570e04216226074e5b7"
     },
     {
       "path": "data/legislation.js",
-      "bytes": 11159,
-      "sha256": "1a3fc5b4411ae9c7147cdc5e0a951cde328d70c4c8d7a725c717b43ce8ef1488"
-    },
-    {
-      "path": "data/norm-questions.js",
-      "bytes": 15562796,
-      "sha256": "78cbb626aff25126a76cb2fbc112c41fe9e5e3a348a9ed71899726d9dcdb1531"
-    },
-    {
-      "path": "data/path-questions.js",
-      "bytes": 124227,
-      "sha256": "ddafe8b388a7e6ffb808fe6af384f18b40db63413db291620922db44cbb5c9ec"
+      "bytes": 41317,
+      "sha256": "26705e76bf6197b666a465bb8b54f3e02a11674769f049d430d5d9b4f339f763"
     },
     {
       "path": "data/programmes.js",
-      "bytes": 3818,
-      "sha256": "b11eb7417224434d942a41267f654651d012bb0121dcff8af28770eb5c7e092e"
-    },
-    {
-      "path": "data/question-bank.js",
-      "bytes": 33271,
-      "sha256": "573bf1eef5d735faf79864103860e843e1966de086bfa038ffc536529a9cd75a"
+      "bytes": 7349,
+      "sha256": "49f706f6547cd34505853be3e176cc31797306d83488f136c701cde9774f1cc8"
     },
     {
       "path": "data/questions.js",
-      "bytes": 4946,
-      "sha256": "c2a9ca56b71d4cd51ba9fa65a216c5f404ea0f154c51c1bfacf871aaf16f3a8f"
+      "bytes": 242,
+      "sha256": "1c3ab653492b6abfce1f31cb318e11a7eafd883edc15b6fa33e00fdcceae569b"
     },
     {
-      "path": "data/rh-cases.js",
-      "bytes": 77687,
-      "sha256": "92f0868c1381920f9d8098e893afe35f83f87b617e48bf51e2d8287ce2104b55"
+      "path": "data/reading-sources.js",
+      "bytes": 13116525,
+      "sha256": "2373d1c32b4a4d800f1df1e31b033fa3946ccd2aa52008c1a19658f928712208"
+    },
+    {
+      "path": "data/reviewed-part-01.js",
+      "bytes": 2475342,
+      "sha256": "5c5579c4c5c4d36823d45e979b09b193e09c77c1a06c61679cb24047f70304fe"
+    },
+    {
+      "path": "data/reviewed-part-02.js",
+      "bytes": 2497112,
+      "sha256": "c723e10281542e2ce06cd2dbf00cdc1c666a33563cc22f41c569dece8a3678d0"
+    },
+    {
+      "path": "data/reviewed-part-03.js",
+      "bytes": 2421233,
+      "sha256": "501ef36dc5fa25e9cfe04b3bb1d1d79efed624f1befd4288ea130ff71c318d57"
+    },
+    {
+      "path": "data/reviewed-part-04.js",
+      "bytes": 2286492,
+      "sha256": "e229f6f5cf93876d8672c7b1e955d3eb17b050354532fc275615858416ec094d"
+    },
+    {
+      "path": "data/reviewed-part-05.js",
+      "bytes": 1626028,
+      "sha256": "329dd5137ebe67ad292c8d0175d83edc3c0d13cff998f9d485e99bf2ad9a31ba"
+    },
+    {
+      "path": "data/reviewed-part-06.js",
+      "bytes": 2997399,
+      "sha256": "70cffd73504ffd9ee59ba4571f7430af1194bbcc04c58dc4fc571596c400cf4f"
+    },
+    {
+      "path": "data/reviewed-part-07.js",
+      "bytes": 2909792,
+      "sha256": "caa6d219a69523a25cd6adfb26142929dd8f8d11b1e9968cf01362696ef922d7"
+    },
+    {
+      "path": "data/reviewed-part-08.js",
+      "bytes": 3218548,
+      "sha256": "c2b0d7c4181520b307f76a087e9741f99bfd523c8a7b4b66d0eab6fe9d1d45a4"
+    },
+    {
+      "path": "data/reviewed-part-09.js",
+      "bytes": 4005003,
+      "sha256": "40c201f2e9e5d0a7aa00f7fdc981604ab48d814f62031352ed12b764b20b9d48"
+    },
+    {
+      "path": "data/reviewed-part-10.js",
+      "bytes": 2352270,
+      "sha256": "7151d4ddddd6a1e3fcf4f9a13ada1313ff0c0afe0ec428db1f868b1dfc439388"
+    },
+    {
+      "path": "data/reviewed-part-11.js",
+      "bytes": 2690467,
+      "sha256": "3ec42a51cfefe2c239e8dd0b852733708adcad46668b916df74966f27d8809a6"
+    },
+    {
+      "path": "data/reviewed-part-12.js",
+      "bytes": 1988911,
+      "sha256": "e3ba97f956c9c7c7dacc22ba1b801150e5822a3392094cbfad494c0c6aedb028"
+    },
+    {
+      "path": "data/reviewed-part-13.js",
+      "bytes": 1756637,
+      "sha256": "7e07e5d3368062da1c18519a13c1470c34045a702192e8bf32b18883d2de30b7"
+    },
+    {
+      "path": "data/reviewed-part-14.js",
+      "bytes": 1374162,
+      "sha256": "24e44306990202b2d8c0c6e1caef9094f1705f26689943a34af754841c05ea10"
+    },
+    {
+      "path": "data/reviewed-questions.js",
+      "bytes": 926,
+      "sha256": "f0e9b35977bcb7dbbf7847be0b45413acf7fcc2c622c098fd0267c6defa4d842"
     },
     {
       "path": "db.js",
-      "bytes": 3239,
-      "sha256": "acd778690ce0ff9c1933b30b8fad7f4810a7e75eb7c131ad332c16a9f974bf54"
+      "bytes": 4069,
+      "sha256": "c927e4e2b80ff586f358218c5de31aeb9c7585d10e0f062ed5280ffc6123558c"
     },
     {
       "path": "engine.js",
-      "bytes": 4514,
-      "sha256": "2feefa3980ca3f84cabdb676ebad1844b7e74819041bdcf6cafe28824bee5cfb"
+      "bytes": 6648,
+      "sha256": "fcfc27c5fe0ec39f2437703965f4ab8e47ce3caaf1e15564680e6f5db30f1f95"
+    },
+    {
+      "path": "essay.js",
+      "bytes": 617,
+      "sha256": "3f517833de56e7ddf0bc5e544d566a05835ba62bb7e2e0247ba5f8d841cc1760"
+    },
+    {
+      "path": "exam-mode.js",
+      "bytes": 5456,
+      "sha256": "f48f4ed9c72315be4fab8b7c74a9650efb1e0dda956147d8dd67ffdc27fa28b5"
+    },
+    {
+      "path": "exam-ui.js",
+      "bytes": 17974,
+      "sha256": "2801bc1e4b91a88fb5760338f32c553d854f4cc485d9cb48756773fb812a35ce"
+    },
+    {
+      "path": "guided-reading.js",
+      "bytes": 3987,
+      "sha256": "48dfe1134dbbe107d6ada0d076d0b515d511b2a4d5205f3a6a45cef7d426fe09"
     },
     {
       "path": "icons/apple-touch-icon.png",
@@ -123,13 +256,13 @@
     },
     {
       "path": "learning.js",
-      "bytes": 2854,
-      "sha256": "d6ab5ada9836f67bcbbedc6cdbc262a8c165071cff0757ab20ee4b306cf041f2"
+      "bytes": 4816,
+      "sha256": "dbe9e320328f77679aa072bb8c2f9ecf0d65e37f3595625ae1b96bfa345dd6ed"
     },
     {
       "path": "LEVANTAMENTO.md",
-      "bytes": 6972,
-      "sha256": "c701ecb25ed5341ee9c21b6af380084c0c3efe5b540c6389a4e37a2c158940eb"
+      "bytes": 14793,
+      "sha256": "c4131c6daccc9ba07083b38584f8a2a6098b16316189fd13d83eca75c72011e1"
     },
     {
       "path": "manifest.webmanifest",
@@ -142,39 +275,54 @@
       "sha256": "a083c4596b38b5bcb38fe8edcbf17b5778b3d9f9e7eae27d403dc44c3beb2224"
     },
     {
-      "path": "preview-banco-rh.png",
-      "bytes": 41291,
-      "sha256": "22db76a832e90be1ca0bc09df707b46cd9a389bd8310aede34bd11baac9cdf7d"
+      "path": "offers.js",
+      "bytes": 5317,
+      "sha256": "adf9f99617bae7e3e23c1357abb8badf1a70914d97369c20c9528109d526ec2e"
+    },
+    {
+      "path": "reading-excerpts.js",
+      "bytes": 1082,
+      "sha256": "c612632b0fed21f9c655f1d69919ac4beec28a824acf28decfdf72003439ba54"
     },
     {
       "path": "README.md",
-      "bytes": 5733,
-      "sha256": "71cb2d3e417ff09f9b14a8408cd2c8abae50c24b0501d4d22ae3af25a7088bf3"
+      "bytes": 5118,
+      "sha256": "3106e2b30f14e2e3f096d320f852fc91c15a0339eada66941898059d26d4461b"
+    },
+    {
+      "path": "scripts/update-bep-offers.mjs",
+      "bytes": 5832,
+      "sha256": "42e55efc77d055f40abe1e2e58e6d51a6c919b133cd540445b9c4517e74cfa9c"
     },
     {
       "path": "service-worker.js",
-      "bytes": 1527,
-      "sha256": "0e6bae3631d7a18445a6cbb4e1bb54034002dddea1409b4367daa626bd76155f"
+      "bytes": 2873,
+      "sha256": "1dab33b7591675a3a952afbf19ac07fbf1d19f709d48603c64a5d81bc3572598"
+    },
+    {
+      "path": "study-guide.js",
+      "bytes": 3567,
+      "sha256": "98735fc697546d45b7c5544a29edecaca0aa46e45876f025fdfa16ce535543a9"
     },
     {
       "path": "styles.css",
-      "bytes": 8823,
-      "sha256": "5df00053c49440364e719445afa5597ef7f7cfe9cf4cc005df121618db639dd6"
+      "bytes": 12124,
+      "sha256": "af67b143b60e28e9773ff2533ba0a069697fdbf3ca944c6b9896831407e6b531"
     },
     {
       "path": "TESTAR-1-A-1.txt",
-      "bytes": 2441,
-      "sha256": "19d6de73fff39701be39a591b4f9b1c2bd78dc98025bb0749e27d83e4fbefc0b"
+      "bytes": 9491,
+      "sha256": "3d3ac0b5ac2c5fdfcdb9d3e27b914951933df1a3112b03634543ff662cf0ab8b"
     },
     {
       "path": "TESTAR-PERCURSO.txt",
-      "bytes": 1919,
-      "sha256": "84bf62a99b299f8f3ac0c1bb64a9fbdf36f294effb54ffebed768f991b2708b6"
+      "bytes": 906,
+      "sha256": "6c6814e79462730018d45a2abd9b1843f75d93db7c3203287c24ffa5a1e2f4a0"
     },
     {
       "path": "VERIFICACAO.txt",
-      "bytes": 2685,
-      "sha256": "416eb8c332b162f127677318e5b8ad2eb895ff1e2a1b4cef3e6b1517fef57ff6"
+      "bytes": 6419,
+      "sha256": "cc12bf2f7af6b9a6cbbc55c046197a5ca105f3be26cd843220297a478d0e78cf"
     }
   ]
 }

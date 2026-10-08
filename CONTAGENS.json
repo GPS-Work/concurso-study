@@ -1,26 +1,888 @@
 {
-  "status": "PASS",
   "date": "2026-10-07",
-  "records": 7274,
-  "active": 7270,
-  "suspended": 4,
-  "literal": 7082,
-  "conceptAndCase": 188,
-  "units": 973,
-  "articles": 3292,
-  "paragraphs": 16859,
-  "profiles": {
-    "continental": 6175,
-    "local": 6501,
-    "regional": 6474,
-    "dre": 6153
+  "records": 8256,
+  "active": 8251,
+  "suspended": 5,
+  "multipleChoice": 8251,
+  "cloze": 0,
+  "newQuestions": 6749,
+  "reviewedOriginalQuestions": 1502,
+  "newPracticalAndCalculations": 6749,
+  "newCalculationVariants": 3,
+  "newLearningGroups": 6749,
+  "newArticles": 4841,
+  "learningGroups": 7108,
+  "articlesWithQuestions": 4850,
+  "lessons": 629,
+  "chapters": 10,
+  "legacyUnits": 28,
+  "difficulty": {
+    "1": 565,
+    "2": 2375,
+    "3": 3673,
+    "4": 1588,
+    "5": 50
   },
-  "levels": {
-    "1": 5061,
-    "2": 2099,
-    "3": 43,
-    "4": 36,
-    "5": 31
-  },
-  "programmeCounts": "DRE — matérias do Aviso 6/2026: 6153 perguntas, 829 unidades.\nFunchal — matérias do aviso de 2024: 4142 perguntas, 550 unidades.\nRH — núcleo geral do Continente: 5032 perguntas, 674 unidades."
+  "profiles": [
+    {
+      "name": "Madeira regional — geral",
+      "questions": 7148,
+      "lessons": 587
+    },
+    {
+      "name": "Continente central — geral",
+      "questions": 6297,
+      "lessons": 512
+    },
+    {
+      "name": "Madeira autárquico — geral",
+      "questions": 6072,
+      "lessons": 511
+    },
+    {
+      "name": "DRE — matérias do Aviso 6/2026",
+      "questions": 6776,
+      "lessons": 563
+    },
+    {
+      "name": "Funchal — matérias do aviso de 2024",
+      "questions": 4628,
+      "lessons": 398
+    },
+    {
+      "name": "RH — núcleo geral do Continente",
+      "questions": 5329,
+      "lessons": 431
+    }
+  ],
+  "byLaw": [
+    {
+      "id": "crp",
+      "name": "CRP",
+      "questions": 364,
+      "groups": 341,
+      "articlesWithQuestions": 296,
+      "inventoryArticles": 296,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-aprovacao-constituicao/1976-34520775"
+    },
+    {
+      "id": "cpa",
+      "name": "CPA",
+      "questions": 555,
+      "groups": 363,
+      "articlesWithQuestions": 203,
+      "inventoryArticles": 203,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2015-105602322"
+    },
+    {
+      "id": "ltfp",
+      "name": "LTFP",
+      "questions": 1038,
+      "groups": 612,
+      "articlesWithQuestions": 389,
+      "inventoryArticles": 424,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2014-57466875"
+    },
+    {
+      "id": "ct",
+      "name": "CT",
+      "questions": 610,
+      "groups": 610,
+      "articlesWithQuestions": 599,
+      "inventoryArticles": 601,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34546475"
+    },
+    {
+      "id": "siadap",
+      "name": "SIADAP",
+      "questions": 291,
+      "groups": 114,
+      "articlesWithQuestions": 82,
+      "inventoryArticles": 100,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2007-34446375"
+    },
+    {
+      "id": "rjal",
+      "name": "RJAL",
+      "questions": 237,
+      "groups": 237,
+      "articlesWithQuestions": 142,
+      "inventoryArticles": 147,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2013-56366098"
+    },
+    {
+      "id": "sst",
+      "name": "SST",
+      "questions": 192,
+      "groups": 171,
+      "articlesWithQuestions": 122,
+      "inventoryArticles": 126,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-56365341"
+    },
+    {
+      "id": "acidentes",
+      "name": "Acidentes em serviço",
+      "questions": 95,
+      "groups": 89,
+      "articlesWithQuestions": 60,
+      "inventoryArticles": 60,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1999-34565375"
+    },
+    {
+      "id": "concursosnacional",
+      "name": "Concursos — nacional",
+      "questions": 106,
+      "groups": 97,
+      "articlesWithQuestions": 45,
+      "inventoryArticles": 45,
+      "source": "https://diariodarepublica.pt/dr/detalhe/portaria/233-2022-200860990"
+    },
+    {
+      "id": "modernizacao",
+      "name": "Modernização",
+      "questions": 115,
+      "groups": 112,
+      "articlesWithQuestions": 60,
+      "inventoryArticles": 62,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1999-107547988"
+    },
+    {
+      "id": "ccp",
+      "name": "CCP",
+      "questions": 810,
+      "groups": 810,
+      "articlesWithQuestions": 525,
+      "inventoryArticles": 570,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/177-2026-1166969779"
+    },
+    {
+      "id": "rgpd",
+      "name": "RGPD",
+      "questions": 229,
+      "groups": 180,
+      "articlesWithQuestions": 99,
+      "inventoryArticles": 99,
+      "source": "https://eur-lex.europa.eu/eli/reg/2016/679/2016-05-04/por/pdf"
+    },
+    {
+      "id": "rgpdpt",
+      "name": "Proteção de dados PT",
+      "questions": 149,
+      "groups": 147,
+      "articlesWithQuestions": 107,
+      "inventoryArticles": 107,
+      "source": "https://diariodarepublica.pt/dr/detalhe/lei/58-2019-123815982"
+    },
+    {
+      "id": "lada",
+      "name": "LADA",
+      "questions": 125,
+      "groups": 117,
+      "articlesWithQuestions": 52,
+      "inventoryArticles": 52,
+      "source": "https://diariodarepublica.pt/dr/detalhe/lei/68-2021-170221042"
+    },
+    {
+      "id": "lcpa",
+      "name": "LCPA",
+      "questions": 42,
+      "groups": 42,
+      "articlesWithQuestions": 19,
+      "inventoryArticles": 19,
+      "source": "https://diariodarepublica.pt/dr/detalhe/lei/8-2012-542996"
+    },
+    {
+      "id": "lcpadecreto",
+      "name": "Execução LCPA",
+      "questions": 46,
+      "groups": 46,
+      "articlesWithQuestions": 23,
+      "inventoryArticles": 24,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/180-2026-1168451281"
+    },
+    {
+      "id": "ltfpram",
+      "name": "LTFP-RAM",
+      "questions": 82,
+      "groups": 53,
+      "articlesWithQuestions": 45,
+      "inventoryArticles": 45,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-legislativo-regional/2018-115893761"
+    },
+    {
+      "id": "siadapram",
+      "name": "SIADAP-RAM",
+      "questions": 302,
+      "groups": 150,
+      "articlesWithQuestions": 78,
+      "inventoryArticles": 92,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-legislativo-regional/2009-874069762"
+    },
+    {
+      "id": "siadaplocal",
+      "name": "SIADAP autárquico",
+      "questions": 39,
+      "groups": 33,
+      "articlesWithQuestions": 29,
+      "inventoryArticles": 29,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-regulamentar/7-2026-1151816546"
+    },
+    {
+      "id": "ccpram",
+      "name": "CCP-RAM",
+      "questions": 44,
+      "groups": 44,
+      "articlesWithQuestions": 18,
+      "inventoryArticles": 19,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-legislativo-regional/2008-61725773"
+    },
+    {
+      "id": "concursosram",
+      "name": "Concursos — RAM",
+      "questions": 90,
+      "groups": 50,
+      "articlesWithQuestions": 32,
+      "inventoryArticles": 32,
+      "source": "https://www.madeira.gov.pt/Portals/25/Documentos/Legislacao/Portaria_407_2023_M.pdf"
+    },
+    {
+      "id": "orgdre",
+      "name": "Orgânica DRE",
+      "questions": 24,
+      "groups": 24,
+      "articlesWithQuestions": 10,
+      "inventoryArticles": 10,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-regulamentar-regional/2020-140546855"
+    },
+    {
+      "id": "nucleardre",
+      "name": "Estrutura nuclear DRE",
+      "questions": 38,
+      "groups": 38,
+      "articlesWithQuestions": 14,
+      "inventoryArticles": 14,
+      "source": "https://www.madeira.gov.pt/Portals/15/documentos/1_DRE/ADirecao/Lei_Organica/ISerie-100-2023-05-30sup.pdf"
+    },
+    {
+      "id": "flexiveldre",
+      "name": "Estrutura flexível DRE",
+      "questions": 35,
+      "groups": 35,
+      "articlesWithQuestions": 25,
+      "inventoryArticles": 27,
+      "source": "https://www.madeira.gov.pt/Portals/15/documentos/1_DRE/ADirecao/Lei_Organica/IISerie-102-2023-05-31Supl3.pdf"
+    },
+    {
+      "id": "oram2025",
+      "name": "ORAM 2025",
+      "questions": 0,
+      "groups": 0,
+      "articlesWithQuestions": 0,
+      "inventoryArticles": 0,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-legislativo-regional/2025-923290723"
+    },
+    {
+      "id": "execoram2025",
+      "name": "Execução ORAM 2025",
+      "questions": 0,
+      "groups": 0,
+      "articlesWithQuestions": 0,
+      "inventoryArticles": 0,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-regulamentar-regional/11-2025-933008873"
+    },
+    {
+      "id": "cpaapproval",
+      "name": "CPA — aprovação",
+      "questions": 10,
+      "groups": 10,
+      "articlesWithQuestions": 8,
+      "inventoryArticles": 9,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2015-105602322"
+    },
+    {
+      "id": "rvp",
+      "name": "RVP",
+      "questions": 37,
+      "groups": 37,
+      "articlesWithQuestions": 36,
+      "inventoryArticles": 36,
+      "source": "https://diariodarepublica.pt/dr/detalhe/lei/25-2017-107094720"
+    },
+    {
+      "id": "rvpapproval",
+      "name": "Transição RVP",
+      "questions": 14,
+      "groups": 14,
+      "articlesWithQuestions": 14,
+      "inventoryArticles": 14,
+      "source": "https://diariodarepublica.pt/dr/detalhe/lei/25-2017-107094720"
+    },
+    {
+      "id": "prereforma",
+      "name": "Pré-reforma",
+      "questions": 5,
+      "groups": 5,
+      "articlesWithQuestions": 5,
+      "inventoryArticles": 5,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-regulamentar/2-2019-119188972"
+    },
+    {
+      "id": "prereformaram",
+      "name": "Pré-reforma RAM",
+      "questions": 13,
+      "groups": 13,
+      "articlesWithQuestions": 12,
+      "inventoryArticles": 12,
+      "source": "https://pfp.madeira.gov.pt/assets/home/docs/Regulamento_PreReforma_RAM.pdf"
+    },
+    {
+      "id": "prereformaramchange",
+      "name": "Pré-reforma RAM — competências",
+      "questions": 3,
+      "groups": 3,
+      "articlesWithQuestions": 3,
+      "inventoryArticles": 3,
+      "source": "https://joram.madeira.gov.pt/joram/1serie/Ano%20de%202024/ISerie-035-2024-03-01sup2.pdf"
+    },
+    {
+      "id": "rvpprocedure",
+      "name": "Procedimento RVP",
+      "questions": 11,
+      "groups": 11,
+      "articlesWithQuestions": 10,
+      "inventoryArticles": 10,
+      "source": "https://diariodarepublica.pt/dr/detalhe/portaria/48-2014-572387"
+    },
+    {
+      "id": "rvplocal",
+      "name": "RVP autárquico",
+      "questions": 4,
+      "groups": 4,
+      "articlesWithQuestions": 4,
+      "inventoryArticles": 4,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2009-75415953"
+    },
+    {
+      "id": "siadapportaria",
+      "name": "Competências SIADAP",
+      "questions": 61,
+      "groups": 61,
+      "articlesWithQuestions": 18,
+      "inventoryArticles": 18,
+      "source": "https://diariodarepublica.pt/dr/detalhe/portaria/236-2024-889128430"
+    },
+    {
+      "id": "siadappc",
+      "name": "Ponderação curricular",
+      "questions": 11,
+      "groups": 11,
+      "articlesWithQuestions": 10,
+      "inventoryArticles": 10,
+      "source": "https://diariodarepublica.pt/dr/detalhe/despacho-normativo/4-a-2010-2077784"
+    },
+    {
+      "id": "siadaprampc",
+      "name": "Ponderação SRE RAM",
+      "questions": 16,
+      "groups": 16,
+      "articlesWithQuestions": 10,
+      "inventoryArticles": 10,
+      "source": "https://www.madeira.gov.pt//Portals/16/Documentos/NaoDocente/OficiosCirculares/NovaFicPonCur2025%201.pdf"
+    },
+    {
+      "id": "travelabroad",
+      "name": "Ajudas estrangeiro",
+      "questions": 14,
+      "groups": 14,
+      "articlesWithQuestions": 10,
+      "inventoryArticles": 10,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1995-107684416"
+    },
+    {
+      "id": "faap",
+      "name": "FAAP",
+      "questions": 20,
+      "groups": 20,
+      "articlesWithQuestions": 15,
+      "inventoryArticles": 15,
+      "source": "https://diariodarepublica.pt/dr/detalhe/portaria/103-2023-211666654"
+    },
+    {
+      "id": "ctram",
+      "name": "CT — adaptação RAM",
+      "questions": 11,
+      "groups": 11,
+      "articlesWithQuestions": 10,
+      "inventoryArticles": 12,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-legislativo-regional/2009-114479973"
+    },
+    {
+      "id": "ctram2012",
+      "name": "CT — RAM 2012",
+      "questions": 7,
+      "groups": 7,
+      "articlesWithQuestions": 7,
+      "inventoryArticles": 7,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/39-2012-190181"
+    },
+    {
+      "id": "autonomyram",
+      "name": "Dia da Autonomia",
+      "questions": 2,
+      "groups": 2,
+      "articlesWithQuestions": 2,
+      "inventoryArticles": 2,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/17-2024-900164436"
+    },
+    {
+      "id": "rmmgram2026",
+      "name": "RMMG RAM 2026",
+      "questions": 4,
+      "groups": 4,
+      "articlesWithQuestions": 4,
+      "inventoryArticles": 4,
+      "source": "https://files.diariodarepublica.pt/1s/2026/02/02300/0001400015.pdf"
+    },
+    {
+      "id": "ctapproval",
+      "name": "CT — aprovação",
+      "questions": 15,
+      "groups": 15,
+      "articlesWithQuestions": 14,
+      "inventoryArticles": 14,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34546475"
+    },
+    {
+      "id": "ctarbitration",
+      "name": "Arbitragem laboral",
+      "questions": 32,
+      "groups": 32,
+      "articlesWithQuestions": 32,
+      "inventoryArticles": 32,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2009-56720782"
+    },
+    {
+      "id": "ctarbram",
+      "name": "Arbitragem — RAM",
+      "questions": 5,
+      "groups": 5,
+      "articlesWithQuestions": 5,
+      "inventoryArticles": 5,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/4-2012-553578"
+    },
+    {
+      "id": "ctmapsram",
+      "name": "Horários — RAM",
+      "questions": 8,
+      "groups": 8,
+      "articlesWithQuestions": 8,
+      "inventoryArticles": 10,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-regulamentar-regional/2006-937443541"
+    },
+    {
+      "id": "concursos",
+      "name": "Concursos antigos",
+      "questions": 0,
+      "groups": 0,
+      "articlesWithQuestions": 0,
+      "inventoryArticles": 0,
+      "source": null
+    },
+    {
+      "id": "orgsre",
+      "name": "SRE",
+      "questions": 53,
+      "groups": 53,
+      "articlesWithQuestions": 36,
+      "inventoryArticles": 36,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-regulamentar-regional/15-2024-885361660"
+    },
+    {
+      "id": "execoram2026",
+      "name": "Execução ORAM 2026",
+      "questions": 63,
+      "groups": 63,
+      "articlesWithQuestions": 32,
+      "inventoryArticles": 32,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-regulamentar-regional/12-2026-1131612584"
+    },
+    {
+      "id": "oram2026",
+      "name": "ORAM 2026",
+      "questions": 169,
+      "groups": 169,
+      "articlesWithQuestions": 131,
+      "inventoryArticles": 131,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/8-2025-993031451"
+    },
+    {
+      "id": "circ1",
+      "name": "Circular 1/2026",
+      "questions": 71,
+      "groups": 71,
+      "articlesWithQuestions": 67,
+      "inventoryArticles": 67,
+      "source": "https://www.madeira.gov.pt/drot/pesquisar/ctl/ReadInformcao/mid/1894/InformacaoId/254482/UnidadeOrganicaId/12/LiveSearch/OR%C3%87/2026"
+    },
+    {
+      "id": "circ2",
+      "name": "Circular 2/2026",
+      "questions": 80,
+      "groups": 80,
+      "articlesWithQuestions": 74,
+      "inventoryArticles": 74,
+      "source": "https://www.madeira.gov.pt/drot/pesquisar/ctl/ReadInformcao/mid/1894/InformacaoId/254483/UnidadeOrganicaId/12/LiveSearch/OR%C3%87/2026"
+    },
+    {
+      "id": "latepayment",
+      "name": "Mora comercial",
+      "questions": 29,
+      "groups": 29,
+      "articlesWithQuestions": 15,
+      "inventoryArticles": 15,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/62-2013-261160"
+    },
+    {
+      "id": "quota",
+      "name": "Quotas de emprego",
+      "questions": 23,
+      "groups": 23,
+      "articlesWithQuestions": 11,
+      "inventoryArticles": 11,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/29-2001-315563"
+    },
+    {
+      "id": "pay2026",
+      "name": "Remunerações 2026",
+      "questions": 20,
+      "groups": 20,
+      "articlesWithQuestions": 9,
+      "inventoryArticles": 9,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/29-a-2026-1031110272"
+    },
+    {
+      "id": "meal2026",
+      "name": "Refeição 2026",
+      "questions": 4,
+      "groups": 4,
+      "articlesWithQuestions": 3,
+      "inventoryArticles": 3,
+      "source": "https://diariodarepublica.pt/dr/detalhe/portaria/51-b-2026-1031110274"
+    },
+    {
+      "id": "quotaram",
+      "name": "Quotas RAM",
+      "questions": 7,
+      "groups": 7,
+      "articlesWithQuestions": 5,
+      "inventoryArticles": 5,
+      "source": "https://files.diariodarepublica.pt/1s/2001/08/196a00/54435443.pdf"
+    },
+    {
+      "id": "sicknessrgss",
+      "name": "Doença RGSS",
+      "questions": 71,
+      "groups": 71,
+      "articlesWithQuestions": 52,
+      "inventoryArticles": 52,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2004-34545075"
+    },
+    {
+      "id": "parentalrgss",
+      "name": "Parentalidade RGSS",
+      "questions": 120,
+      "groups": 120,
+      "articlesWithQuestions": 92,
+      "inventoryArticles": 93,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2009-70157403"
+    },
+    {
+      "id": "circrh",
+      "name": "Circular RH 1/2026",
+      "questions": 8,
+      "groups": 8,
+      "articlesWithQuestions": 5,
+      "inventoryArticles": 5,
+      "source": "https://www.madeira.gov.pt/drpa/pesquisar/ctl/ReadInformcao/mid/13040/InformacaoId/255148/UnidadeOrganicaId/20/LiveSearch/Circular"
+    },
+    {
+      "id": "circ9",
+      "name": "Circular 9/2026",
+      "questions": 20,
+      "groups": 20,
+      "articlesWithQuestions": 17,
+      "inventoryArticles": 17,
+      "source": "https://www.madeira.gov.pt/drot/pesquisar/ctl/ReadInformcao/mid/1894/InformacaoId/254481/UnidadeOrganicaId/12/LiveSearch/OR%C3%87/2026"
+    },
+    {
+      "id": "circ3",
+      "name": "Circular 3/2026",
+      "questions": 7,
+      "groups": 7,
+      "articlesWithQuestions": 7,
+      "inventoryArticles": 7,
+      "source": "https://www.madeira.gov.pt/drot/pesquisar/ctl/ReadInformcao/mid/1894/InformacaoId/251772/UnidadeOrganicaId/12/LiveSearch/OR%C3%87/2026"
+    },
+    {
+      "id": "circ4",
+      "name": "Circular 4/2026",
+      "questions": 29,
+      "groups": 29,
+      "articlesWithQuestions": 29,
+      "inventoryArticles": 29,
+      "source": "https://www.madeira.gov.pt/drot/pesquisar/ctl/ReadInformcao/mid/1894/InformacaoId/251895/UnidadeOrganicaId/12/LiveSearch/OR%C3%87/2026"
+    },
+    {
+      "id": "circ5",
+      "name": "Circular 5/2026",
+      "questions": 26,
+      "groups": 26,
+      "articlesWithQuestions": 25,
+      "inventoryArticles": 25,
+      "source": "https://www.madeira.gov.pt/drot/pesquisar/ctl/ReadInformcao/mid/1894/InformacaoId/252228/UnidadeOrganicaId/12/LiveSearch/OR%C3%87/2026"
+    },
+    {
+      "id": "circ6",
+      "name": "Circular 6/2026",
+      "questions": 36,
+      "groups": 36,
+      "articlesWithQuestions": 33,
+      "inventoryArticles": 33,
+      "source": "https://www.madeira.gov.pt/drot/pesquisar/ctl/ReadInformcao/mid/1894/InformacaoId/252298/UnidadeOrganicaId/12/LiveSearch/OR%C3%87/2026"
+    },
+    {
+      "id": "circ7",
+      "name": "Circular 7/2026",
+      "questions": 21,
+      "groups": 21,
+      "articlesWithQuestions": 18,
+      "inventoryArticles": 18,
+      "source": "https://www.madeira.gov.pt/drot/pesquisar/ctl/ReadInformcao/mid/1894/InformacaoId/253204/UnidadeOrganicaId/12/LiveSearch/OR%C3%87/2026"
+    },
+    {
+      "id": "circ8",
+      "name": "Circular 8/2026",
+      "questions": 14,
+      "groups": 14,
+      "articlesWithQuestions": 6,
+      "inventoryArticles": 6,
+      "source": "https://www.madeira.gov.pt/drot/pesquisar/ctl/ReadInformcao/mid/1894/InformacaoId/254174/UnidadeOrganicaId/12/LiveSearch/OR%C3%87/2026"
+    },
+    {
+      "id": "circ10",
+      "name": "Circular 10/2026",
+      "questions": 218,
+      "groups": 218,
+      "articlesWithQuestions": 193,
+      "inventoryArticles": 193,
+      "source": "https://www.madeira.gov.pt/drot/pesquisar/ctl/ReadInformcao/mid/1894/InformacaoId/255569/UnidadeOrganicaId/12/LiveSearch/OR%C3%87/2026"
+    },
+    {
+      "id": "socialframework",
+      "name": "Proteção social AP",
+      "questions": 42,
+      "groups": 42,
+      "articlesWithQuestions": 32,
+      "inventoryArticles": 32,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-862379424"
+    },
+    {
+      "id": "ltfpapproval",
+      "name": "Lei 35/2014 (aprovação)",
+      "questions": 76,
+      "groups": 76,
+      "articlesWithQuestions": 42,
+      "inventoryArticles": 44,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2014-57466875"
+    },
+    {
+      "id": "parentalconvergent",
+      "name": "Parentalidade RPSC",
+      "questions": 76,
+      "groups": 76,
+      "articlesWithQuestions": 41,
+      "inventoryArticles": 41,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2009-34548075"
+    },
+    {
+      "id": "formation",
+      "name": "Formação AP",
+      "questions": 53,
+      "groups": 53,
+      "articlesWithQuestions": 33,
+      "inventoryArticles": 33,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2016-891753493"
+    },
+    {
+      "id": "formationlocal",
+      "name": "Formação local",
+      "questions": 17,
+      "groups": 17,
+      "articlesWithQuestions": 15,
+      "inventoryArticles": 15,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/173-2019-127176909"
+    },
+    {
+      "id": "balance",
+      "name": "Balanço social",
+      "questions": 75,
+      "groups": 75,
+      "articlesWithQuestions": 41,
+      "inventoryArticles": 41,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/190-1996-233093"
+    },
+    {
+      "id": "balanceram",
+      "name": "Balanço social RAM",
+      "questions": 27,
+      "groups": 27,
+      "articlesWithQuestions": 10,
+      "inventoryArticles": 10,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-regulamentar-regional/4-2023-205928641"
+    },
+    {
+      "id": "degrees",
+      "name": "Graus estrangeiros",
+      "questions": 42,
+      "groups": 42,
+      "articlesWithQuestions": 30,
+      "inventoryArticles": 30,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2018-116101330"
+    },
+    {
+      "id": "degreereg",
+      "name": "Reconhecimento — tramitação",
+      "questions": 29,
+      "groups": 29,
+      "articlesWithQuestions": 21,
+      "inventoryArticles": 21,
+      "source": "https://diariodarepublica.pt/dr/detalhe/portaria/43-2020-129208007"
+    },
+    {
+      "id": "adse",
+      "name": "ADSE",
+      "questions": 97,
+      "groups": 97,
+      "articlesWithQuestions": 65,
+      "inventoryArticles": 72,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1983-127022688"
+    },
+    {
+      "id": "rgpc",
+      "name": "RGPC",
+      "questions": 98,
+      "groups": 98,
+      "articlesWithQuestions": 35,
+      "inventoryArticles": 35,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2021-175681989"
+    },
+    {
+      "id": "menac",
+      "name": "MENAC",
+      "questions": 57,
+      "groups": 57,
+      "articlesWithQuestions": 32,
+      "inventoryArticles": 41,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2021-175681989"
+    },
+    {
+      "id": "dici",
+      "name": "DICI",
+      "questions": 8,
+      "groups": 8,
+      "articlesWithQuestions": 4,
+      "inventoryArticles": 4,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/portaria/2024-889942163"
+    },
+    {
+      "id": "travel",
+      "name": "Ajudas de custo",
+      "questions": 64,
+      "groups": 64,
+      "articlesWithQuestions": 40,
+      "inventoryArticles": 40,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1998-107753302"
+    },
+    {
+      "id": "travelram",
+      "name": "Ajudas RAM",
+      "questions": 9,
+      "groups": 9,
+      "articlesWithQuestions": 7,
+      "inventoryArticles": 7,
+      "source": "https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/8-2014-55028878"
+    },
+    {
+      "id": "dirigenteram",
+      "name": "Dirigentes RAM",
+      "questions": 55,
+      "groups": 55,
+      "articlesWithQuestions": 19,
+      "inventoryArticles": 21,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-legislativo-regional/2004-885235297"
+    },
+    {
+      "id": "dirigente",
+      "name": "Dirigentes",
+      "questions": 56,
+      "groups": 56,
+      "articlesWithQuestions": 38,
+      "inventoryArticles": 43,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2004-34547575"
+    },
+    {
+      "id": "dirigentelocal",
+      "name": "Dirigentes locais",
+      "questions": 41,
+      "groups": 41,
+      "articlesWithQuestions": 23,
+      "inventoryArticles": 28,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2012-105657367"
+    },
+    {
+      "id": "cgainscricao",
+      "name": "Reinscrição CGA",
+      "questions": 10,
+      "groups": 10,
+      "articlesWithQuestions": 5,
+      "inventoryArticles": 5,
+      "source": "https://diariodarepublica.pt/dr/detalhe/lei/45-2024-901400365"
+    },
+    {
+      "id": "pensionannual2026",
+      "name": "Pensões: parâmetros anuais",
+      "questions": 4,
+      "groups": 4,
+      "articlesWithQuestions": 4,
+      "inventoryArticles": 4,
+      "source": "https://diariodarepublica.pt/dr/detalhe/portaria/476-2025-992879815"
+    },
+    {
+      "id": "cga",
+      "name": "CGA",
+      "questions": 235,
+      "groups": 235,
+      "articlesWithQuestions": 127,
+      "inventoryArticles": 152,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1972-34576175"
+    },
+    {
+      "id": "cgaconvergence",
+      "name": "Convergência CGA",
+      "questions": 27,
+      "groups": 27,
+      "articlesWithQuestions": 12,
+      "inventoryArticles": 13,
+      "source": "https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2005-34506375"
+    },
+    {
+      "id": "pensionage2026",
+      "name": "Idade de pensão2026",
+      "questions": 3,
+      "groups": 3,
+      "articlesWithQuestions": 3,
+      "inventoryArticles": 4,
+      "source": "https://diariodarepublica.pt/dr/detalhe/portaria/358-2024-901536090"
+    }
+  ]
 }
