@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "source": "https://bep.madeira.gov.pt/Home/OfertasGeral",
+  "access": "sem-vinculo",
+  "checkedAt": "2026-10-07T13:13:58.458Z",
+  "lastAttemptAt": "2026-10-07T13:13:58.458Z",
+  "status": "ok",
+  "detailComplete": true,
+  "offers": [
+    {
+      "id": "7203",
+      "code": "OE202609/00678",
+      "type": "Procedimento Concursal Comum",
+      "career": "Sapador Florestal",
+      "organisation": "SRTAC - Instituto das Florestas e Conservação da Natureza, IP-RAM",
+      "deadline": "2026-10-08",
+      "url": "https://bep.madeira.gov.pt/Home/Oferta/7203",
+      "access": "sem-vinculo",
+      "rh": "no",
+      "functionalArea": "Manutenção e Serviços",
+      "rhReason": "Sem referência explícita a funções de RH nos campos da oferta"
+    },
+    {
+      "id": "7214",
+      "code": "OE202609/00689",
+      "type": "Procedimento Concursal Comum",
+      "career": "Técnico Superior",
+      "organisation": "SRE - Instituto para a Qualificação, IP-RAM",
+      "deadline": "2026-10-12",
+      "url": "https://bep.madeira.gov.pt/Home/Oferta/7214",
+      "access": "sem-vinculo",
+      "rh": "no",
+      "functionalArea": "Formação",
+      "rhReason": "Sem referência explícita a funções de RH nos campos da oferta"
+    },
+    {
+      "id": "7240",
+      "code": "OE202610/00715",
+      "type": "Concurso Externo",
+      "career": "Assistente Técnico",
+      "organisation": "IHM - Investimentos Habitacionais da Madeira, EPERAM",
+      "deadline": "2026-10-19",
+      "url": "https://bep.madeira.gov.pt/Home/Oferta/7240",
+      "access": "sem-vinculo",
+      "rh": "no",
+      "functionalArea": "Apoio Administrativo",
+      "rhReason": "Sem referência explícita a funções de RH nos campos da oferta"
+    }
+  ]
+}
